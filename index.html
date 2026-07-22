@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>oss-pulse · suzunn's open-source dashboard</title>
+<meta name="description" content="Live dashboard of suzunn's open-source contributions — merged PRs, open PRs, and activity, refreshed daily." />
+<style>
+  :root {
+    color-scheme: dark;
+    --page:        #0d0d0d;
+    --surface:     #1a1a19;
+    --ink:         #ffffff;
+    --ink-2:       #c3c2b7;
+    --muted:       #898781;
+    --grid:        #2c2c2a;
+    --baseline:    #383835;
+    --border:      rgba(255,255,255,0.10);
+    --series:      #3987e5;
+    --series-soft: rgba(57,135,229,0.14);
+    --good:        #0ca30c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  a { color: var(--series); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 40px 20px 64px; }
+
+  header { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  header img { width: 56px; height: 56px; border-radius: 50%; border: 1px solid var(--border); }
+  header h1 { font-size: 22px; margin: 0; letter-spacing: -0.01em; }
+  header .sub { color: var(--ink-2); font-size: 14px; margin-top: 2px; }
+  .stamp { margin-left: auto; color: var(--muted); font-size: 13px; text-align: right; }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin: 28px 0; }
+  .tile {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px;
+  }
+  .tile .label { color: var(--ink-2); font-size: 13px; }
+  .tile .value { font-size: 34px; font-weight: 650; letter-spacing: -0.02em; margin-top: 2px; }
+  .tile .hint { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px; margin-bottom: 14px;
+  }
+  .card h2 { font-size: 15px; margin: 0 0 14px; font-weight: 600; color: var(--ink); }
+  .card h2 .note { color: var(--muted); font-weight: 400; font-size: 13px; }
+
+  .chart-wrap { position: relative; }
+  .tooltip {
+    position: absolute; pointer-events: none; opacity: 0;
+    background: #242423; border: 1px solid var(--border); border-radius: 8px;
+    padding: 6px 10px; font-size: 13px; color: var(--ink);
+    transform: translate(-50%, -110%); white-space: nowrap; transition: opacity .12s;
+  }
+  .tooltip .t-month { color: var(--ink-2); }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 760px) { .cols { grid-template-columns: 1fr; } }
+
+  ul.prs { list-style: none; margin: 0; padding: 0; }
+  ul.prs li { padding: 9px 0; border-top: 1px solid var(--grid); display: flex; gap: 10px; align-items: baseline; }
+  ul.prs li:first-child { border-top: 0; }
+  .chip {
+    flex: none; font-size: 12px; color: var(--ink-2);
+    background: var(--series-soft); border-radius: 999px; padding: 1px 9px;
+  }
+  ul.prs .when { margin-left: auto; flex: none; color: var(--muted); font-size: 12.5px; }
+
+  .repos { display: flex; flex-wrap: wrap; gap: 8px; }
+  .repo-chip {
+    font-size: 13px; color: var(--ink-2); border: 1px solid var(--border);
+    border-radius: 999px; padding: 3px 12px;
+  }
+  .repo-chip b { color: var(--ink); font-weight: 600; }
+
+  details.table { margin-top: 10px; color: var(--ink-2); font-size: 13px; }
+  details.table table { border-collapse: collapse; margin-top: 8px; font-variant-numeric: tabular-nums; }
+  details.table td, details.table th { border: 1px solid var(--grid); padding: 4px 10px; text-align: left; }
+
+  footer { color: var(--muted); font-size: 13px; margin-top: 28px; text-align: center; }
+  .err { color: var(--ink-2); background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img id="avatar" alt="" src="https://github.com/suzunn.png" />
+    <div>
+      <h1>oss-pulse</h1>
+      <div class="sub"><a id="user-link" href="https://github.com/suzunn">@suzunn</a>'s open-source contribution pulse</div>
+    </div>
+    <div class="stamp">auto-refreshed daily<br /><span id="generated">loading…</span></div>
+  </header>
+
+  <div id="app">
+    <div class="tiles" id="tiles"></div>
+
+    <div class="card">
+      <h2>Merged pull requests per month <span class="note">· last 12 months · repos I don't own</span></h2>
+      <div class="chart-wrap" id="chart-wrap">
+        <svg id="chart" width="100%" height="220" role="img" aria-label="Bar chart of merged pull requests per month"></svg>
+        <div class="tooltip" id="tooltip"></div>
+      </div>
+      <details class="table"><summary>View as table</summary><div id="month-table"></div></details>
+    </div>
+
+    <div class="cols">
+      <div class="card">
+        <h2>Recently merged</h2>
+        <ul class="prs" id="merged-list"></ul>
+      </div>
+      <div class="card">
+        <h2>Open right now</h2>
+        <ul class="prs" id="open-list"></ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Merged by repository <span class="note">· last 12 months</span></h2>
+      <div class="repos" id="repo-chips"></div>
+    </div>
+  </div>
+
+  <footer>
+    Built and maintained by an AI-assisted pipeline · data from the GitHub API ·
+    refreshed daily by <a href="https://github.com/suzunn/oss-pulse/actions">GitHub Actions</a>
+  </footer>
+</div>
+
+<script>
+(async () => {
+  const app = document.getElementById("app");
+  let d;
+  try {
+    d = await (await fetch("data.json", { cache: "no-store" })).json();
+  } catch (e) {
+    app.innerHTML = '<div class="err">Could not load data.json — the first data refresh may still be running.</div>';
+    return;
+  }
+
+  const fmtDay = (iso) => iso ? new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "";
+  document.getElementById("generated").textContent =
+    "updated " + new Date(d.generatedAt).toLocaleString("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+
+  const reposTouched = d.mergedLast12Months.byRepo.length;
+  const tiles = [
+    { label: "Merged PRs", value: d.mergedLast12Months.total, hint: "last 12 months" },
+    { label: "Open PRs", value: d.openPrs.length, hint: "awaiting review" },
+    { label: "Repos contributed", value: reposTouched, hint: "merged upstream" },
+    { label: "Followers", value: d.user.followers, hint: "on GitHub" },
+  ];
+  document.getElementById("tiles").innerHTML = tiles.map(t =>
+    `<div class="tile"><div class="label">${t.label}</div><div class="value">${t.value}</div><div class="hint">${t.hint}</div></div>`
+  ).join("");
+
+  // --- bar chart ---
+  const months = d.mergedLast12Months.monthly;
+  const svg = document.getElementById("chart");
+  const tip = document.getElementById("tooltip");
+  const W = svg.clientWidth || 1000, H = 220, padL = 30, padB = 26, padT = 12;
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const max = Math.max(1, ...months.map(m => m.count));
+  const innerW = W - padL - 8, innerH = H - padT - padB;
+  const slot = innerW / months.length;
+  const barW = Math.min(46, slot - 2);
+  const y = (v) => padT + innerH * (1 - v / max);
+  const monthName = (k) => new Date(k + "-01T00:00:00Z").toLocaleDateString("en-GB", { month: "short" });
+
+  let s = "";
+  const gridSteps = max <= 4 ? max : 4;
+  for (let i = 1; i <= gridSteps; i++) {
+    const v = (max / gridSteps) * i, gy = y(v);
+    s += `<line x1="${padL}" x2="${W - 8}" y1="${gy}" y2="${gy}" stroke="var(--grid)" stroke-width="1"/>`;
+    s += `<text x="${padL - 7}" y="${gy + 4}" fill="var(--muted)" font-size="11" text-anchor="end">${Math.round(v)}</text>`;
+  }
+  s += `<line x1="${padL}" x2="${W - 8}" y1="${y(0)}" y2="${y(0)}" stroke="var(--baseline)" stroke-width="1"/>`;
+  months.forEach((m, i) => {
+    const x = padL + slot * i + (slot - barW) / 2;
+    const by = y(m.count), bh = Math.max(0, y(0) - by);
+    if (m.count > 0) {
+      const r = Math.min(4, bh);
+      s += `<path d="M${x},${y(0)} v${-(bh - r)} q0,${-r} ${r},${-r} h${barW - 2 * r} q${r},0 ${r},${r} v${bh - r} z"
+             fill="var(--series)" data-i="${i}"/>`;
+    }
+    if (m.count === max && max > 0) {
+      s += `<text x="${x + barW / 2}" y="${by - 6}" fill="var(--ink-2)" font-size="11.5" text-anchor="middle">${m.count}</text>`;
+    }
+    s += `<rect x="${padL + slot * i}" y="${padT}" width="${slot}" height="${innerH + padB - 4}" fill="transparent" data-i="${i}"/>`;
+    s += `<text x="${x + barW / 2}" y="${H - 8}" fill="var(--muted)" font-size="11" text-anchor="middle">${monthName(m.month)}</text>`;
+  });
+  svg.innerHTML = s;
+
+  const wrap = document.getElementById("chart-wrap");
+  svg.addEventListener("mousemove", (ev) => {
+    const t = ev.target.closest("[data-i]");
+    if (!t) { tip.style.opacity = 0; return; }
+    const m = months[+t.dataset.i];
+    const rect = wrap.getBoundingClientRect();
+    tip.innerHTML = `<span class="t-month">${monthName(m.month)} ${m.month.slice(0, 4)}</span> · <b>${m.count}</b> merged`;
+    tip.style.left = (ev.clientX - rect.left) + "px";
+    tip.style.top = (ev.clientY - rect.top - 6) + "px";
+    tip.style.opacity = 1;
+  });
+  svg.addEventListener("mouseleave", () => { tip.style.opacity = 0; });
+
+  document.getElementById("month-table").innerHTML =
+    "<table><tr><th>Month</th><th>Merged</th></tr>" +
+    months.map(m => `<tr><td>${m.month}</td><td>${m.count}</td></tr>`).join("") + "</table>";
+
+  // --- lists ---
+  const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const li = (pr, when) =>
+    `<li><span class="chip">${esc(pr.repo.split("/")[0])}</span>
+       <a href="${pr.url}" target="_blank" rel="noreferrer">${esc(pr.title)}</a>
+       <span class="when">${when}</span></li>`;
+  document.getElementById("merged-list").innerHTML =
+    d.mergedLast12Months.recent.map(pr => li(pr, fmtDay(pr.mergedAt))).join("") || "<li>Nothing yet.</li>";
+  document.getElementById("open-list").innerHTML =
+    d.openPrs.slice(0, 12).map(pr => li(pr, fmtDay(pr.updatedAt))).join("") || "<li>All clear.</li>";
+
+  document.getElementById("repo-chips").innerHTML =
+    d.mergedLast12Months.byRepo.map(r => `<span class="repo-chip">${esc(r.repo)} <b>×${r.count}</b></span>`).join("");
+})();
+</script>
+</body>
+</html>

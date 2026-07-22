@@ -1,0 +1,233 @@
+{
+  "generatedAt": "2026-07-22T14:36:49.088Z",
+  "user": {
+    "login": "suzunn",
+    "followers": 9,
+    "publicRepos": 46,
+    "avatarUrl": "https://avatars.githubusercontent.com/u/139023635?v=4",
+    "htmlUrl": "https://github.com/suzunn"
+  },
+  "mergedLast12Months": {
+    "total": 11,
+    "monthly": [
+      {
+        "month": "2025-08",
+        "count": 0
+      },
+      {
+        "month": "2025-09",
+        "count": 0
+      },
+      {
+        "month": "2025-10",
+        "count": 0
+      },
+      {
+        "month": "2025-11",
+        "count": 0
+      },
+      {
+        "month": "2025-12",
+        "count": 1
+      },
+      {
+        "month": "2026-01",
+        "count": 0
+      },
+      {
+        "month": "2026-02",
+        "count": 0
+      },
+      {
+        "month": "2026-03",
+        "count": 0
+      },
+      {
+        "month": "2026-04",
+        "count": 0
+      },
+      {
+        "month": "2026-05",
+        "count": 1
+      },
+      {
+        "month": "2026-06",
+        "count": 7
+      },
+      {
+        "month": "2026-07",
+        "count": 2
+      }
+    ],
+    "byRepo": [
+      {
+        "repo": "eclipse-theia/theia",
+        "count": 1
+      },
+      {
+        "repo": "facebookresearch/hydra",
+        "count": 1
+      },
+      {
+        "repo": "inventree/InvenTree",
+        "count": 1
+      },
+      {
+        "repo": "getsentry/sentry-javascript",
+        "count": 1
+      },
+      {
+        "repo": "raycast/extensions",
+        "count": 1
+      },
+      {
+        "repo": "remotion-dev/remotion",
+        "count": 1
+      },
+      {
+        "repo": "gpustack/gpustack",
+        "count": 1
+      },
+      {
+        "repo": "kucherenko/jscpd",
+        "count": 1
+      },
+      {
+        "repo": "pnpm/pnpm",
+        "count": 1
+      },
+      {
+        "repo": "samchon/typia",
+        "count": 1
+      },
+      {
+        "repo": "firstcontributions/first-contributions",
+        "count": 1
+      }
+    ],
+    "recent": [
+      {
+        "title": "fix: sync telemetry logger enable states",
+        "repo": "eclipse-theia/theia",
+        "url": "https://github.com/eclipse-theia/theia/pull/17693",
+        "mergedAt": "2026-07-22T13:00:12Z"
+      },
+      {
+        "title": "fix: log multirun failures to job files",
+        "repo": "facebookresearch/hydra",
+        "url": "https://github.com/facebookresearch/hydra/pull/3227",
+        "mergedAt": "2026-07-22T09:15:23Z"
+      },
+      {
+        "title": "fix: preserve supplier import stock workflow",
+        "repo": "inventree/InvenTree",
+        "url": "https://github.com/inventree/InvenTree/pull/12215",
+        "mergedAt": "2026-06-29T14:24:01Z"
+      },
+      {
+        "title": "docs: Use Cloudflare nodejs_compat flag",
+        "repo": "getsentry/sentry-javascript",
+        "url": "https://github.com/getsentry/sentry-javascript/pull/21659",
+        "mergedAt": "2026-06-29T08:23:04Z"
+      },
+      {
+        "title": "fix: keep easy ocr fallback text",
+        "repo": "raycast/extensions",
+        "url": "https://github.com/raycast/extensions/pull/28960",
+        "mergedAt": "2026-06-23T06:42:48Z"
+      },
+      {
+        "title": "`@remotion/lambda`: allow custom s3 provider regions",
+        "repo": "remotion-dev/remotion",
+        "url": "https://github.com/remotion-dev/remotion/pull/8536",
+        "mergedAt": "2026-06-17T08:27:51Z"
+      },
+      {
+        "title": "fix: normalize cluster registration urls",
+        "repo": "gpustack/gpustack",
+        "url": "https://github.com/gpustack/gpustack/pull/5581",
+        "mergedAt": "2026-06-12T06:34:52Z"
+      },
+      {
+        "title": "fix: report duplicate token counts in json",
+        "repo": "kucherenko/jscpd",
+        "url": "https://github.com/kucherenko/jscpd/pull/801",
+        "mergedAt": "2026-06-07T06:13:25Z"
+      },
+      {
+        "title": "fix: retry pacquet metadata fetches with a shared, config-driven retry policy",
+        "repo": "pnpm/pnpm",
+        "url": "https://github.com/pnpm/pnpm/pull/12029",
+        "mergedAt": "2026-06-02T22:42:38Z"
+      },
+      {
+        "title": "test(mcp): add error handling and unknown tool tests, document runtim…",
+        "repo": "samchon/typia",
+        "url": "https://github.com/samchon/typia/pull/1862",
+        "mergedAt": "2026-05-20T08:31:24Z"
+      }
+    ]
+  },
+  "openPrs": [
+    {
+      "title": "fix: add author language squash mode",
+      "repo": "WeblateOrg/weblate",
+      "url": "https://github.com/WeblateOrg/weblate/pull/20031",
+      "updatedAt": "2026-07-22T02:16:24Z"
+    },
+    {
+      "title": "fix: handle invalid luhn checksum input",
+      "repo": "gchq/CyberChef",
+      "url": "https://github.com/gchq/CyberChef/pull/2544",
+      "updatedAt": "2026-07-21T17:43:28Z"
+    },
+    {
+      "title": "Update ARC quickstart authentication guidance",
+      "repo": "github/docs",
+      "url": "https://github.com/github/docs/pull/44450",
+      "updatedAt": "2026-07-21T16:24:45Z"
+    },
+    {
+      "title": "fix: align group rename validation with groupadd rules",
+      "repo": "cockpit-project/cockpit",
+      "url": "https://github.com/cockpit-project/cockpit/pull/23359",
+      "updatedAt": "2026-07-21T16:18:53Z"
+    },
+    {
+      "title": "Core: Add handled interaction error regression test",
+      "repo": "storybookjs/storybook",
+      "url": "https://github.com/storybookjs/storybook/pull/34900",
+      "updatedAt": "2026-07-14T17:40:14Z"
+    },
+    {
+      "title": "fix: remove chunked database download header",
+      "repo": "simonw/datasette",
+      "url": "https://github.com/simonw/datasette/pull/2777",
+      "updatedAt": "2026-07-07T20:57:38Z"
+    },
+    {
+      "title": "fix: reject invalid property setter arguments",
+      "repo": "vega/altair",
+      "url": "https://github.com/vega/altair/pull/4068",
+      "updatedAt": "2026-06-24T13:18:21Z"
+    },
+    {
+      "title": "fix: normalize prefixed root route urls",
+      "repo": "fastify/fastify",
+      "url": "https://github.com/fastify/fastify/pull/6755",
+      "updatedAt": "2026-06-18T09:00:35Z"
+    },
+    {
+      "title": "fix: preserve files shared by download tasks",
+      "repo": "AnInsomniacy/motrix-next",
+      "url": "https://github.com/AnInsomniacy/motrix-next/pull/381",
+      "updatedAt": "2026-06-02T06:12:54Z"
+    },
+    {
+      "title": "Add expanded ClickHouse query editor",
+      "repo": "SigNoz/signoz",
+      "url": "https://github.com/SigNoz/signoz/pull/11453",
+      "updatedAt": "2026-05-25T21:11:58Z"
+    }
+  ]
+}
