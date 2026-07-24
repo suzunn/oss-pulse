@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T06:44:57.884Z",
+  "generatedAt": "2026-07-24T06:44:23.597Z",
   "user": {
     "login": "suzunn",
     "followers": 9,
@@ -170,6 +170,18 @@
   },
   "openPrs": [
     {
+      "title": "fix(finder): emit valid XML for fragments with control characters",
+      "repo": "kucherenko/jscpd",
+      "url": "https://github.com/kucherenko/jscpd/pull/886",
+      "updatedAt": "2026-07-23T20:44:41Z"
+    },
+    {
+      "title": "fix: align group rename validation with groupadd rules",
+      "repo": "cockpit-project/cockpit",
+      "url": "https://github.com/cockpit-project/cockpit/pull/23359",
+      "updatedAt": "2026-07-23T20:18:44Z"
+    },
+    {
       "title": "fix: add author language squash mode",
       "repo": "WeblateOrg/weblate",
       "url": "https://github.com/WeblateOrg/weblate/pull/20031",
@@ -186,12 +198,6 @@
       "repo": "github/docs",
       "url": "https://github.com/github/docs/pull/44450",
       "updatedAt": "2026-07-21T16:24:45Z"
-    },
-    {
-      "title": "fix: align group rename validation with groupadd rules",
-      "repo": "cockpit-project/cockpit",
-      "url": "https://github.com/cockpit-project/cockpit/pull/23359",
-      "updatedAt": "2026-07-21T16:18:53Z"
     },
     {
       "title": "Core: Add handled interaction error regression test",
