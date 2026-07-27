@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T07:09:52.287Z",
+  "generatedAt": "2026-07-27T07:59:31.672Z",
   "user": {
     "login": "suzunn",
     "followers": 9,
@@ -170,6 +170,18 @@
   },
   "openPrs": [
     {
+      "title": "fix(types): accept undefined error in LogController.requestCompleted",
+      "repo": "fastify/fastify",
+      "url": "https://github.com/fastify/fastify/pull/6875",
+      "updatedAt": "2026-07-26T19:17:24Z"
+    },
+    {
+      "title": "Update ARC quickstart authentication guidance",
+      "repo": "github/docs",
+      "url": "https://github.com/github/docs/pull/44450",
+      "updatedAt": "2026-07-26T19:10:29Z"
+    },
+    {
       "title": "fix: add author language squash mode",
       "repo": "WeblateOrg/weblate",
       "url": "https://github.com/WeblateOrg/weblate/pull/20031",
@@ -180,12 +192,6 @@
       "repo": "gchq/CyberChef",
       "url": "https://github.com/gchq/CyberChef/pull/2544",
       "updatedAt": "2026-07-21T17:43:28Z"
-    },
-    {
-      "title": "Update ARC quickstart authentication guidance",
-      "repo": "github/docs",
-      "url": "https://github.com/github/docs/pull/44450",
-      "updatedAt": "2026-07-21T16:24:45Z"
     },
     {
       "title": "Core: Add handled interaction error regression test",
