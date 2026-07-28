@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T07:59:31.672Z",
+  "generatedAt": "2026-07-28T07:06:52.107Z",
   "user": {
     "login": "suzunn",
     "followers": 9,
@@ -170,6 +170,24 @@
   },
   "openPrs": [
     {
+      "title": "fix: reject invalid property setter arguments",
+      "repo": "vega/altair",
+      "url": "https://github.com/vega/altair/pull/4068",
+      "updatedAt": "2026-07-27T22:16:26Z"
+    },
+    {
+      "title": "fix: remove chunked database download header",
+      "repo": "simonw/datasette",
+      "url": "https://github.com/simonw/datasette/pull/2777",
+      "updatedAt": "2026-07-27T19:57:36Z"
+    },
+    {
+      "title": "fix: normalize prefixed root route urls",
+      "repo": "fastify/fastify",
+      "url": "https://github.com/fastify/fastify/pull/6755",
+      "updatedAt": "2026-07-27T19:57:26Z"
+    },
+    {
       "title": "fix(types): accept undefined error in LogController.requestCompleted",
       "repo": "fastify/fastify",
       "url": "https://github.com/fastify/fastify/pull/6875",
@@ -198,24 +216,6 @@
       "repo": "storybookjs/storybook",
       "url": "https://github.com/storybookjs/storybook/pull/34900",
       "updatedAt": "2026-07-14T17:40:14Z"
-    },
-    {
-      "title": "fix: remove chunked database download header",
-      "repo": "simonw/datasette",
-      "url": "https://github.com/simonw/datasette/pull/2777",
-      "updatedAt": "2026-07-07T20:57:38Z"
-    },
-    {
-      "title": "fix: reject invalid property setter arguments",
-      "repo": "vega/altair",
-      "url": "https://github.com/vega/altair/pull/4068",
-      "updatedAt": "2026-06-24T13:18:21Z"
-    },
-    {
-      "title": "fix: normalize prefixed root route urls",
-      "repo": "fastify/fastify",
-      "url": "https://github.com/fastify/fastify/pull/6755",
-      "updatedAt": "2026-06-18T09:00:35Z"
     },
     {
       "title": "fix: preserve files shared by download tasks",
