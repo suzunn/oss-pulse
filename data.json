@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T07:06:52.107Z",
+  "generatedAt": "2026-07-29T07:12:24.762Z",
   "user": {
     "login": "suzunn",
     "followers": 9,
@@ -8,7 +8,7 @@
     "htmlUrl": "https://github.com/suzunn"
   },
   "mergedLast12Months": {
-    "total": 11,
+    "total": 12,
     "monthly": [
       {
         "month": "2025-08",
@@ -56,10 +56,14 @@
       },
       {
         "month": "2026-07",
-        "count": 2
+        "count": 3
       }
     ],
     "byRepo": [
+      {
+        "repo": "vega/altair",
+        "count": 1
+      },
       {
         "repo": "eclipse-theia/theia",
         "count": 1
@@ -106,6 +110,12 @@
       }
     ],
     "recent": [
+      {
+        "title": "fix!: raise TypeError for invalid property setter arguments",
+        "repo": "vega/altair",
+        "url": "https://github.com/vega/altair/pull/4068",
+        "mergedAt": "2026-07-28T18:15:30Z"
+      },
       {
         "title": "fix: sync telemetry logger enable states",
         "repo": "eclipse-theia/theia",
@@ -159,22 +169,10 @@
         "repo": "pnpm/pnpm",
         "url": "https://github.com/pnpm/pnpm/pull/12029",
         "mergedAt": "2026-06-02T22:42:38Z"
-      },
-      {
-        "title": "test(mcp): add error handling and unknown tool tests, document runtim…",
-        "repo": "samchon/typia",
-        "url": "https://github.com/samchon/typia/pull/1862",
-        "mergedAt": "2026-05-20T08:31:24Z"
       }
     ]
   },
   "openPrs": [
-    {
-      "title": "fix: reject invalid property setter arguments",
-      "repo": "vega/altair",
-      "url": "https://github.com/vega/altair/pull/4068",
-      "updatedAt": "2026-07-27T22:16:26Z"
-    },
     {
       "title": "fix: remove chunked database download header",
       "repo": "simonw/datasette",
