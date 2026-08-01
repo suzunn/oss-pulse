@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T07:20:19.755Z",
+  "generatedAt": "2026-08-01T06:44:50.731Z",
   "user": {
     "login": "suzunn",
     "followers": 9,
@@ -10,10 +10,6 @@
   "mergedLast12Months": {
     "total": 12,
     "monthly": [
-      {
-        "month": "2025-08",
-        "count": 0
-      },
       {
         "month": "2025-09",
         "count": 0
@@ -57,6 +53,10 @@
       {
         "month": "2026-07",
         "count": 3
+      },
+      {
+        "month": "2026-08",
+        "count": 0
       }
     ],
     "byRepo": [
