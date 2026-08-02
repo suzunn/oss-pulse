@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T06:44:50.731Z",
+  "generatedAt": "2026-08-02T07:07:46.552Z",
   "user": {
     "login": "suzunn",
     "followers": 9,
@@ -174,6 +174,18 @@
   },
   "openPrs": [
     {
+      "title": "Core: Add handled interaction error regression test",
+      "repo": "storybookjs/storybook",
+      "url": "https://github.com/storybookjs/storybook/pull/34900",
+      "updatedAt": "2026-08-02T02:19:06Z"
+    },
+    {
+      "title": "feat(cli): auto-disable ANSI colors when stdout is not a TTY",
+      "repo": "kucherenko/jscpd",
+      "url": "https://github.com/kucherenko/jscpd/pull/899",
+      "updatedAt": "2026-08-01T17:43:25Z"
+    },
+    {
       "title": "fix: remove chunked database download header",
       "repo": "simonw/datasette",
       "url": "https://github.com/simonw/datasette/pull/2777",
@@ -208,12 +220,6 @@
       "repo": "gchq/CyberChef",
       "url": "https://github.com/gchq/CyberChef/pull/2544",
       "updatedAt": "2026-07-21T17:43:28Z"
-    },
-    {
-      "title": "Core: Add handled interaction error regression test",
-      "repo": "storybookjs/storybook",
-      "url": "https://github.com/storybookjs/storybook/pull/34900",
-      "updatedAt": "2026-07-14T17:40:14Z"
     },
     {
       "title": "fix: preserve files shared by download tasks",
