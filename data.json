@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T07:06:34.509Z",
+  "generatedAt": "2026-08-05T07:08:38.977Z",
   "user": {
     "login": "suzunn",
     "followers": 9,
@@ -177,13 +177,37 @@
       "title": "Core: Add handled interaction error regression test",
       "repo": "storybookjs/storybook",
       "url": "https://github.com/storybookjs/storybook/pull/34900",
-      "updatedAt": "2026-08-02T02:19:06Z"
+      "updatedAt": "2026-08-05T02:18:23Z"
+    },
+    {
+      "title": "fix(deps): remove duplicated entries that break pnpm-lock.yaml",
+      "repo": "kucherenko/jscpd",
+      "url": "https://github.com/kucherenko/jscpd/pull/901",
+      "updatedAt": "2026-08-04T17:12:22Z"
+    },
+    {
+      "title": "fix(cli): do not print clones twice with the consoleFull reporter",
+      "repo": "kucherenko/jscpd",
+      "url": "https://github.com/kucherenko/jscpd/pull/900",
+      "updatedAt": "2026-08-04T17:10:56Z"
+    },
+    {
+      "title": "fix: handle invalid luhn checksum input",
+      "repo": "gchq/CyberChef",
+      "url": "https://github.com/gchq/CyberChef/pull/2544",
+      "updatedAt": "2026-08-04T17:03:22Z"
+    },
+    {
+      "title": "fix: preserve files shared by download tasks",
+      "repo": "AnInsomniacy/motrix-next",
+      "url": "https://github.com/AnInsomniacy/motrix-next/pull/381",
+      "updatedAt": "2026-08-04T14:12:02Z"
     },
     {
       "title": "feat(cli): auto-disable ANSI colors when stdout is not a TTY",
       "repo": "kucherenko/jscpd",
       "url": "https://github.com/kucherenko/jscpd/pull/899",
-      "updatedAt": "2026-08-01T17:43:25Z"
+      "updatedAt": "2026-08-04T13:53:50Z"
     },
     {
       "title": "fix: remove chunked database download header",
@@ -214,18 +238,6 @@
       "repo": "WeblateOrg/weblate",
       "url": "https://github.com/WeblateOrg/weblate/pull/20031",
       "updatedAt": "2026-07-22T18:14:01Z"
-    },
-    {
-      "title": "fix: handle invalid luhn checksum input",
-      "repo": "gchq/CyberChef",
-      "url": "https://github.com/gchq/CyberChef/pull/2544",
-      "updatedAt": "2026-07-21T17:43:28Z"
-    },
-    {
-      "title": "fix: preserve files shared by download tasks",
-      "repo": "AnInsomniacy/motrix-next",
-      "url": "https://github.com/AnInsomniacy/motrix-next/pull/381",
-      "updatedAt": "2026-06-02T06:12:54Z"
     },
     {
       "title": "Add expanded ClickHouse query editor",
