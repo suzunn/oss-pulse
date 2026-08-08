@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T05:55:11.770Z",
+  "generatedAt": "2026-08-08T05:13:23.191Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -174,22 +174,28 @@
   },
   "openPrs": [
     {
-      "title": "Update ARC quickstart authentication guidance",
-      "repo": "github/docs",
-      "url": "https://github.com/github/docs/pull/44450",
-      "updatedAt": "2026-08-06T18:51:50Z"
+      "title": "Docs: Mention @remotion/media tags on the Lambda cost page",
+      "repo": "remotion-dev/remotion",
+      "url": "https://github.com/remotion-dev/remotion/pull/10261",
+      "updatedAt": "2026-08-07T19:39:25Z"
     },
     {
-      "title": "fix(types): accept undefined error in LogController.requestCompleted",
+      "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
       "repo": "fastify/fastify",
       "url": "https://github.com/fastify/fastify/pull/6875",
-      "updatedAt": "2026-08-06T09:33:49Z"
+      "updatedAt": "2026-08-07T12:47:59Z"
     },
     {
       "title": "Core: Add handled interaction error regression test",
       "repo": "storybookjs/storybook",
       "url": "https://github.com/storybookjs/storybook/pull/34900",
-      "updatedAt": "2026-08-05T02:18:23Z"
+      "updatedAt": "2026-08-07T09:09:04Z"
+    },
+    {
+      "title": "Update ARC quickstart authentication guidance",
+      "repo": "github/docs",
+      "url": "https://github.com/github/docs/pull/44450",
+      "updatedAt": "2026-08-06T18:51:50Z"
     },
     {
       "title": "fix(deps): remove duplicated entries that break pnpm-lock.yaml",
