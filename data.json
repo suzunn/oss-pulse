@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T05:13:23.191Z",
+  "generatedAt": "2026-08-09T05:27:38.287Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -174,16 +174,16 @@
   },
   "openPrs": [
     {
+      "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
+      "repo": "fastify/fastify",
+      "url": "https://github.com/fastify/fastify/pull/6875",
+      "updatedAt": "2026-08-08T06:36:07Z"
+    },
+    {
       "title": "Docs: Mention @remotion/media tags on the Lambda cost page",
       "repo": "remotion-dev/remotion",
       "url": "https://github.com/remotion-dev/remotion/pull/10261",
       "updatedAt": "2026-08-07T19:39:25Z"
-    },
-    {
-      "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
-      "repo": "fastify/fastify",
-      "url": "https://github.com/fastify/fastify/pull/6875",
-      "updatedAt": "2026-08-07T12:47:59Z"
     },
     {
       "title": "Core: Add handled interaction error regression test",
