@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T05:27:38.287Z",
+  "generatedAt": "2026-08-10T05:51:51.372Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -173,6 +173,12 @@
     ]
   },
   "openPrs": [
+    {
+      "title": "fix(worker): treat a blank backend version as Auto",
+      "repo": "gpustack/gpustack",
+      "url": "https://github.com/gpustack/gpustack/pull/6015",
+      "updatedAt": "2026-08-09T17:15:23Z"
+    },
     {
       "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
       "repo": "fastify/fastify",
