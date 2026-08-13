@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T05:51:49.778Z",
+  "generatedAt": "2026-08-13T05:53:44.020Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -174,16 +174,34 @@
   },
   "openPrs": [
     {
-      "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
-      "repo": "fastify/fastify",
-      "url": "https://github.com/fastify/fastify/pull/6875",
-      "updatedAt": "2026-08-11T17:09:51Z"
+      "title": "feat(cli): auto-disable ANSI colors when stdout is not a TTY",
+      "repo": "kucherenko/jscpd",
+      "url": "https://github.com/kucherenko/jscpd/pull/899",
+      "updatedAt": "2026-08-12T17:19:40Z"
     },
     {
       "title": "fix: preserve existing config in `configure()`",
       "repo": "vega/altair",
       "url": "https://github.com/vega/altair/pull/4095",
-      "updatedAt": "2026-08-10T17:17:59Z"
+      "updatedAt": "2026-08-12T17:03:33Z"
+    },
+    {
+      "title": "fix(deps): remove duplicated entries that break pnpm-lock.yaml",
+      "repo": "kucherenko/jscpd",
+      "url": "https://github.com/kucherenko/jscpd/pull/901",
+      "updatedAt": "2026-08-12T16:34:37Z"
+    },
+    {
+      "title": "fix(cli): do not print clones twice with the consoleFull reporter",
+      "repo": "kucherenko/jscpd",
+      "url": "https://github.com/kucherenko/jscpd/pull/900",
+      "updatedAt": "2026-08-12T16:34:35Z"
+    },
+    {
+      "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
+      "repo": "fastify/fastify",
+      "url": "https://github.com/fastify/fastify/pull/6875",
+      "updatedAt": "2026-08-12T08:55:56Z"
     },
     {
       "title": "Core: Add handled interaction error regression test",
@@ -198,18 +216,6 @@
       "updatedAt": "2026-08-06T18:51:50Z"
     },
     {
-      "title": "fix(deps): remove duplicated entries that break pnpm-lock.yaml",
-      "repo": "kucherenko/jscpd",
-      "url": "https://github.com/kucherenko/jscpd/pull/901",
-      "updatedAt": "2026-08-04T17:12:22Z"
-    },
-    {
-      "title": "fix(cli): do not print clones twice with the consoleFull reporter",
-      "repo": "kucherenko/jscpd",
-      "url": "https://github.com/kucherenko/jscpd/pull/900",
-      "updatedAt": "2026-08-04T17:10:56Z"
-    },
-    {
       "title": "fix: handle invalid luhn checksum input",
       "repo": "gchq/CyberChef",
       "url": "https://github.com/gchq/CyberChef/pull/2544",
@@ -220,12 +226,6 @@
       "repo": "AnInsomniacy/motrix-next",
       "url": "https://github.com/AnInsomniacy/motrix-next/pull/381",
       "updatedAt": "2026-08-04T14:12:02Z"
-    },
-    {
-      "title": "feat(cli): auto-disable ANSI colors when stdout is not a TTY",
-      "repo": "kucherenko/jscpd",
-      "url": "https://github.com/kucherenko/jscpd/pull/899",
-      "updatedAt": "2026-08-04T13:53:50Z"
     },
     {
       "title": "fix: remove chunked database download header",
