@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T05:53:44.020Z",
+  "generatedAt": "2026-08-14T05:52:00.072Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -8,7 +8,7 @@
     "htmlUrl": "https://github.com/suzunn"
   },
   "mergedLast12Months": {
-    "total": 13,
+    "total": 17,
     "monthly": [
       {
         "month": "2025-09",
@@ -56,10 +56,14 @@
       },
       {
         "month": "2026-08",
-        "count": 1
+        "count": 5
       }
     ],
     "byRepo": [
+      {
+        "repo": "kucherenko/jscpd",
+        "count": 5
+      },
       {
         "repo": "gpustack/gpustack",
         "count": 2
@@ -93,10 +97,6 @@
         "count": 1
       },
       {
-        "repo": "kucherenko/jscpd",
-        "count": 1
-      },
-      {
         "repo": "pnpm/pnpm",
         "count": 1
       },
@@ -110,6 +110,30 @@
       }
     ],
     "recent": [
+      {
+        "title": "fix(finder): align clone fragments with the reported line numbers",
+        "repo": "kucherenko/jscpd",
+        "url": "https://github.com/kucherenko/jscpd/pull/916",
+        "mergedAt": "2026-08-13T17:35:48Z"
+      },
+      {
+        "title": "fix(cli): do not print clones twice with the consoleFull reporter",
+        "repo": "kucherenko/jscpd",
+        "url": "https://github.com/kucherenko/jscpd/pull/900",
+        "mergedAt": "2026-08-13T13:47:42Z"
+      },
+      {
+        "title": "feat(cli): auto-disable ANSI colors when stdout is not a TTY",
+        "repo": "kucherenko/jscpd",
+        "url": "https://github.com/kucherenko/jscpd/pull/899",
+        "mergedAt": "2026-08-13T13:18:34Z"
+      },
+      {
+        "title": "fix(deps): remove duplicated entries that break pnpm-lock.yaml",
+        "repo": "kucherenko/jscpd",
+        "url": "https://github.com/kucherenko/jscpd/pull/901",
+        "mergedAt": "2026-08-13T09:04:45Z"
+      },
       {
         "title": "fix(worker): treat a blank backend version as Auto",
         "repo": "gpustack/gpustack",
@@ -145,63 +169,21 @@
         "repo": "getsentry/sentry-javascript",
         "url": "https://github.com/getsentry/sentry-javascript/pull/21659",
         "mergedAt": "2026-06-29T08:23:04Z"
-      },
-      {
-        "title": "fix: keep easy ocr fallback text",
-        "repo": "raycast/extensions",
-        "url": "https://github.com/raycast/extensions/pull/28960",
-        "mergedAt": "2026-06-23T06:42:48Z"
-      },
-      {
-        "title": "`@remotion/lambda`: allow custom s3 provider regions",
-        "repo": "remotion-dev/remotion",
-        "url": "https://github.com/remotion-dev/remotion/pull/8536",
-        "mergedAt": "2026-06-17T08:27:51Z"
-      },
-      {
-        "title": "fix: normalize cluster registration urls",
-        "repo": "gpustack/gpustack",
-        "url": "https://github.com/gpustack/gpustack/pull/5581",
-        "mergedAt": "2026-06-12T06:34:52Z"
-      },
-      {
-        "title": "fix: report duplicate token counts in json",
-        "repo": "kucherenko/jscpd",
-        "url": "https://github.com/kucherenko/jscpd/pull/801",
-        "mergedAt": "2026-06-07T06:13:25Z"
       }
     ]
   },
   "openPrs": [
     {
-      "title": "feat(cli): auto-disable ANSI colors when stdout is not a TTY",
-      "repo": "kucherenko/jscpd",
-      "url": "https://github.com/kucherenko/jscpd/pull/899",
-      "updatedAt": "2026-08-12T17:19:40Z"
+      "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
+      "repo": "fastify/fastify",
+      "url": "https://github.com/fastify/fastify/pull/6875",
+      "updatedAt": "2026-08-13T09:41:40Z"
     },
     {
       "title": "fix: preserve existing config in `configure()`",
       "repo": "vega/altair",
       "url": "https://github.com/vega/altair/pull/4095",
       "updatedAt": "2026-08-12T17:03:33Z"
-    },
-    {
-      "title": "fix(deps): remove duplicated entries that break pnpm-lock.yaml",
-      "repo": "kucherenko/jscpd",
-      "url": "https://github.com/kucherenko/jscpd/pull/901",
-      "updatedAt": "2026-08-12T16:34:37Z"
-    },
-    {
-      "title": "fix(cli): do not print clones twice with the consoleFull reporter",
-      "repo": "kucherenko/jscpd",
-      "url": "https://github.com/kucherenko/jscpd/pull/900",
-      "updatedAt": "2026-08-12T16:34:35Z"
-    },
-    {
-      "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
-      "repo": "fastify/fastify",
-      "url": "https://github.com/fastify/fastify/pull/6875",
-      "updatedAt": "2026-08-12T08:55:56Z"
     },
     {
       "title": "Core: Add handled interaction error regression test",
