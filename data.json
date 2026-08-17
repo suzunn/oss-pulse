@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T04:56:46.830Z",
+  "generatedAt": "2026-08-17T05:04:35.538Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -177,7 +177,13 @@
       "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
       "repo": "fastify/fastify",
       "url": "https://github.com/fastify/fastify/pull/6875",
-      "updatedAt": "2026-08-13T09:41:40Z"
+      "updatedAt": "2026-08-16T17:13:40Z"
+    },
+    {
+      "title": "fix(finder): normalize native path separators before globbing",
+      "repo": "kucherenko/jscpd",
+      "url": "https://github.com/kucherenko/jscpd/pull/939",
+      "updatedAt": "2026-08-16T16:05:20Z"
     },
     {
       "title": "fix: preserve existing config in `configure()`",
