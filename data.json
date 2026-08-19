@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T04:59:02.779Z",
+  "generatedAt": "2026-08-19T04:59:20.948Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -174,10 +174,22 @@
   },
   "openPrs": [
     {
+      "title": "fix: handle invalid luhn checksum input",
+      "repo": "gchq/CyberChef",
+      "url": "https://github.com/gchq/CyberChef/pull/2544",
+      "updatedAt": "2026-08-18T17:50:51Z"
+    },
+    {
       "title": "test: pin test fixture line endings via .gitattributes",
       "repo": "kucherenko/jscpd",
       "url": "https://github.com/kucherenko/jscpd/pull/940",
-      "updatedAt": "2026-08-17T17:16:05Z"
+      "updatedAt": "2026-08-18T11:54:08Z"
+    },
+    {
+      "title": "fix: preserve existing config in `configure()`",
+      "repo": "vega/altair",
+      "url": "https://github.com/vega/altair/pull/4095",
+      "updatedAt": "2026-08-18T11:45:24Z"
     },
     {
       "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
@@ -186,34 +198,10 @@
       "updatedAt": "2026-08-16T17:13:40Z"
     },
     {
-      "title": "fix: preserve existing config in `configure()`",
-      "repo": "vega/altair",
-      "url": "https://github.com/vega/altair/pull/4095",
-      "updatedAt": "2026-08-12T17:03:33Z"
-    },
-    {
-      "title": "Core: Add handled interaction error regression test",
-      "repo": "storybookjs/storybook",
-      "url": "https://github.com/storybookjs/storybook/pull/34900",
-      "updatedAt": "2026-08-07T09:09:04Z"
-    },
-    {
       "title": "Update ARC quickstart authentication guidance",
       "repo": "github/docs",
       "url": "https://github.com/github/docs/pull/44450",
       "updatedAt": "2026-08-06T18:51:50Z"
-    },
-    {
-      "title": "fix: handle invalid luhn checksum input",
-      "repo": "gchq/CyberChef",
-      "url": "https://github.com/gchq/CyberChef/pull/2544",
-      "updatedAt": "2026-08-04T17:03:22Z"
-    },
-    {
-      "title": "fix: preserve files shared by download tasks",
-      "repo": "AnInsomniacy/motrix-next",
-      "url": "https://github.com/AnInsomniacy/motrix-next/pull/381",
-      "updatedAt": "2026-08-04T14:12:02Z"
     },
     {
       "title": "fix: remove chunked database download header",
@@ -226,12 +214,6 @@
       "repo": "WeblateOrg/weblate",
       "url": "https://github.com/WeblateOrg/weblate/pull/20031",
       "updatedAt": "2026-07-22T18:14:01Z"
-    },
-    {
-      "title": "Add expanded ClickHouse query editor",
-      "repo": "SigNoz/signoz",
-      "url": "https://github.com/SigNoz/signoz/pull/11453",
-      "updatedAt": "2026-05-25T21:11:58Z"
     }
   ]
 }
