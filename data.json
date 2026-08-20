@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T04:59:20.948Z",
+  "generatedAt": "2026-08-20T05:01:20.851Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -174,6 +174,12 @@
   },
   "openPrs": [
     {
+      "title": "fix: add author language squash mode",
+      "repo": "WeblateOrg/weblate",
+      "url": "https://github.com/WeblateOrg/weblate/pull/20031",
+      "updatedAt": "2026-08-19T10:35:54Z"
+    },
+    {
       "title": "fix: handle invalid luhn checksum input",
       "repo": "gchq/CyberChef",
       "url": "https://github.com/gchq/CyberChef/pull/2544",
@@ -208,12 +214,6 @@
       "repo": "simonw/datasette",
       "url": "https://github.com/simonw/datasette/pull/2777",
       "updatedAt": "2026-07-27T19:57:36Z"
-    },
-    {
-      "title": "fix: add author language squash mode",
-      "repo": "WeblateOrg/weblate",
-      "url": "https://github.com/WeblateOrg/weblate/pull/20031",
-      "updatedAt": "2026-07-22T18:14:01Z"
     }
   ]
 }
