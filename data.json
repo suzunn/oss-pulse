@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T05:01:20.851Z",
+  "generatedAt": "2026-08-21T05:01:03.296Z",
   "user": {
     "login": "suzunn",
     "followers": 10,
@@ -8,7 +8,7 @@
     "htmlUrl": "https://github.com/suzunn"
   },
   "mergedLast12Months": {
-    "total": 18,
+    "total": 19,
     "monthly": [
       {
         "month": "2025-09",
@@ -56,7 +56,7 @@
       },
       {
         "month": "2026-08",
-        "count": 6
+        "count": 7
       }
     ],
     "byRepo": [
@@ -67,6 +67,10 @@
       {
         "repo": "gpustack/gpustack",
         "count": 2
+      },
+      {
+        "repo": "fastify/fastify",
+        "count": 1
       },
       {
         "repo": "vega/altair",
@@ -110,6 +114,12 @@
       }
     ],
     "recent": [
+      {
+        "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
+        "repo": "fastify/fastify",
+        "url": "https://github.com/fastify/fastify/pull/6875",
+        "mergedAt": "2026-08-20T14:10:50Z"
+      },
       {
         "title": "fix(finder): normalize native path separators before globbing",
         "repo": "kucherenko/jscpd",
@@ -163,12 +173,6 @@
         "repo": "hydra-ecosystem/hydra",
         "url": "https://github.com/hydra-ecosystem/hydra/pull/3227",
         "mergedAt": "2026-07-22T09:15:23Z"
-      },
-      {
-        "title": "fix: preserve supplier import stock workflow",
-        "repo": "inventree/InvenTree",
-        "url": "https://github.com/inventree/InvenTree/pull/12215",
-        "mergedAt": "2026-06-29T14:24:01Z"
       }
     ]
   },
@@ -196,12 +200,6 @@
       "repo": "vega/altair",
       "url": "https://github.com/vega/altair/pull/4095",
       "updatedAt": "2026-08-18T11:45:24Z"
-    },
-    {
-      "title": "test(types): assert LogController.requestCompleted accepts an undefined error",
-      "repo": "fastify/fastify",
-      "url": "https://github.com/fastify/fastify/pull/6875",
-      "updatedAt": "2026-08-16T17:13:40Z"
     },
     {
       "title": "Update ARC quickstart authentication guidance",
