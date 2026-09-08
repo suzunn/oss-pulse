@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T09:31:17.932Z",
+  "generatedAt": "2026-09-08T08:56:56.765Z",
   "user": {
     "login": "suzunn",
     "followers": 11,
@@ -181,7 +181,7 @@
       "title": "fix: add author language squash mode",
       "repo": "WeblateOrg/weblate",
       "url": "https://github.com/WeblateOrg/weblate/pull/20031",
-      "updatedAt": "2026-08-19T10:35:54Z"
+      "updatedAt": "2026-09-07T12:29:03Z"
     },
     {
       "title": "fix: handle invalid luhn checksum input",
